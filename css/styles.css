@@ -1,0 +1,25 @@
+body {
+    background-image: url("/home/shannon/Documents/moringa-school-projects/Bazu-Pizza/images/pizza5.jpg");
+    background-size: cover;
+  }
+  .container-fluid {
+    margin: 0 auto;
+    width: 960px;
+  }
+  
+  .whatwedo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  h1, h3 {
+    text-align: center;
+  }
+  
+  .pacifico {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .col-md-4.col-sm-12 {
+    text-align: center;
+  }
