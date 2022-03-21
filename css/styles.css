@@ -32,10 +32,15 @@ background-color: #422303;
     height: 200px;
     border-radius: 50%;
   }
-  h1, h3 {
+  h1 {
     text-align: center;
   }
-  
+  h3{
+    color: #272018;
+  }
+  h4{
+    color: #272018;
+  }
   .pacifico {
     font-family: 'Pacifico', cursive;
   }
