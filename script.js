@@ -13,3 +13,19 @@ $(document).ready(function() {
         $(".whatwedo img.one").toggle();
         $(".whatwedo p.one").toggle();
       });
+      $('.whatwedo img.two').click(function() {
+        $(".whatwedo img.two").toggle();
+        $(".whatwedo p.two").toggle();
+      });
+      $('.whatwedo p.two').click(function() {
+        $(".whatwedo img.two").toggle();
+        $(".whatwedo p.two").toggle();
+      });
+      $('.whatwedo img.three').click(function() {
+        $(".whatwedo img.three").toggle();
+        $(".whatwedo p.three").toggle();
+      });
+      $('.whatwedo p.three').click(function() {
+        $(".whatwedo img.three").toggle();
+        $(".whatwedo p.three").toggle();
+      });
