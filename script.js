@@ -29,3 +29,17 @@ $(document).ready(function() {
         $(".whatwedo img.three").toggle();
         $(".whatwedo p.three").toggle();
       });
+      $('.whatwedo h3').click(function() {
+        $(".whatwedo img.one").toggle();
+        $(".whatwedo p.one").toggle();
+      });
+      $('.whatwedo h3').click(function() {
+        $(".whatwedo img.one").toggle();
+        $(".whatwedo p.one").toggle();
+      });
+      $("table").hide();
+  $(".additional-buttons").hide();
+  $(".additional-info").hide();
+  $(".btn.yes").hide();
+  $(".btn.no").hide();
+  $(".additional-info h4").hide();
