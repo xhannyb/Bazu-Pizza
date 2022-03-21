@@ -9,3 +9,7 @@ $(document).ready(function() {
       $(".whatwedo img.one").toggle();
       $(".whatwedo p.one").toggle();
     });
+    $('.whatwedo p.one').click(function() {
+        $(".whatwedo img.one").toggle();
+        $(".whatwedo p.one").toggle();
+      });
