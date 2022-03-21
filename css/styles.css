@@ -2,11 +2,7 @@ body {
     background-image: url("/home/shannon/Documents/moringa-school-projects/Bazu-Pizza/images/flambe.jpg"),     linear-gradient(to right, rgb(235, 158, 44), rgba(238, 171, 83, 0));
     ;
     object-fit: cover;
-    background-position: bottom right,
-    background-attachment:fixed;
-    position: relative;
-    background-position: center center;
-
+    background-position: bottom right;
   }
   .container-fluid {
     margin: 0 auto;
