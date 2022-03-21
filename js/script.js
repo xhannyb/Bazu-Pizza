@@ -79,3 +79,38 @@ $(document).ready(function() {
   
         $("#pizza").append(newRow);
       });
+      $(".btn.check-out").click(function() {
+        $(".btn.add-pizza").hide();
+        $(".btn.check-out").hide();
+        $(".additional-info").show();
+        $(".btn.yes").show();
+        $(".btn.no").show();
+        $(".additional-info .location").hide();
+        grandTotal = grandTotal + total;
+  
+        $(".additional-info h3 span").html(grandTotal);
+      });
+      $(".btn.yes").click(function() {
+        $(".additional-info h5").hide();
+        $(".btn.yes").hide();
+        $(".btn.no").hide();
+        $(".additional-info .location").show();
+        $(".additional-info h3 span").html(grandTotal + 200);
+      });
+      $(".btn.no").click(function() {
+        $(".additional-info h5").hide();
+        $(".btn.yes").hide();
+        $(".btn.no").hide();
+        $(".additional-info .location").show();
+      });
+
+    $(".btn.complete").click(function() {
+        var location = $(".additional-info .location input").val();
+        $(".additional-info h4").show();
+        $(".additional-info .location").hide();
+        $(".additional-info h4 span").html(location);
+      });
+  
+    });
+  
+  });
