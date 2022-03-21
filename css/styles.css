@@ -1,12 +1,9 @@
 body {
     background-image: url("/home/shannon/Documents/moringa-school-projects/Bazu-Pizza/images/pizza6.jpeg");
-    border-radius: 4px;
     background-color: #422303;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 20px;
-    position: relative;
-    overflow-x: hidden;
+    background-position: center;
 
 }
   
