@@ -1,8 +1,26 @@
 body {
-    background-image: url("/home/shannon/Documents/moringa-school-projects/Bazu-Pizza/images/pizza6.jpeg"),     linear-gradient(to right, rgb(235, 158, 44), rgba(238, 171, 83, 0));
+    background-image: url("/home/shannon/Documents/moringa-school-projects/Bazu-Pizza/images/pizza6.jpeg");
     ;
+    background-size: cover;
     object-fit: cover;
-    background-position: bottom right;
+    border-radius: 4px;
+background-color: #422303;
+
+}
+  
+  h1 {
+    background-color: #302e2b;
+    font-weight: 200;
+    font-size: xx-large;
+  }
+  
+  div {
+    background-color: #796d5f;
+    ;
+  }
+  
+  span {
+    background-color: #f18973;
   }
   .container-fluid {
     margin: 0 auto;
@@ -53,8 +71,15 @@ body {
   }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #854802;
+    color: #f38609;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+  #overlay{
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* overflow-x: hidden; */
   }
