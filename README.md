@@ -4,7 +4,7 @@ Welcome to Bazu pizza, where we offer quality pizza made to perfection in kenya!
 This is a pizza webapp that allows customers to choose and order pizza online from the Bazu pizza place.
 # Author
 Shannon Bulimo
-# Technologies Used
+# Technologies and Tools Used
 html and css
 bootstrap.css
 bootstrap.min.js
