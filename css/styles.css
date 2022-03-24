@@ -1,10 +1,143 @@
 body {
-    background-image: url("../images/pizza6.jpeg");
+    background-size: 100%;
+
     background-color: #422303;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    opacity: unset;
+    text-align: center; 
+    background-position: center center;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+#survey-form{
+  background: rgba(21, 20, 85, 0.7);
+  padding: 2.3rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.form-input{
+  margin: 0 2.5rem 1.2rem 2rem;
+}
+
+.form-input-size{
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.2rem;
+  outline: 0;
+  border-style: none;
+  margin-top: 0.4rem;  
+}.container{
+  width: 100%;
+  margin: 3.2rem auto 0 auto;
+}
+
+@media(min-width: 576px){
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media(min-width: 768px){
+  .container{
+    max-width: 720px
+  }
+}
+
+header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
   
   h1 {
@@ -15,6 +148,7 @@ body {
   
   div {
     background-color: #796d5f;
+    background-size: auto
     ;
   }
   
@@ -52,7 +186,7 @@ body {
       width: 100%;
     }
   
-    .display-1 {
+    .first {
       font-size: 2.5rem;
     }
   }
