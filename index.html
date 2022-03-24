@@ -19,136 +19,141 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Oswald" rel="stylesheet">
     <link rel="icon" href="images/pizza 4.jpg" type="image/x-icon">
 
+
 </head>
 <body>
-    <br>
-  <br>
-  <ul class="nav justify-content-end bg-blue color-text-secondary mr-6">
-
-    <li class="nav-item">
-      <a class="nav-link  bg-info text-white" href="#aboutUs"><button>Welcome</button></a>
-      
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link  bg-info text-white" href="#contact">
-        <button>Contacts</button>
-      </a> 
-    </li>
-  </ul>
-  <br>
-  <div class="container-fluid">
-    <div class="jumbotron">
+      <!-- button tag starts from here -->
+ <button type = "button" onclick = 
+ "alert('Welcome to Bazu Pizza, scroll down to select your order.')"> 
+ Welcome! 
+</button> 
+<!-- button tag ends here -->
+<div class="container-fluid">
 
       <div class="page-header ">
-        <h1 class="display-1">Bazu Pizza</h1>
+        <h1 class="first">Bazu Pizza</h1>
       </div>
       <div class="whatwedo">
         <h1 class="pacifico">It's not just Pizza, ni Pizza ya Mabazu!</h1>
-
-        <br>
-        <br>
-        <br>
+        <p>Check out our fine cuisine.</p>
+      </div>
+       <!-- The grid: four columns -->
         <div class="row">
-          <div class="col-md-4 col-sm-12">
-
-            <img class='one' src="images/pizza 2.jpg" alt="Design" id="aboutUs">
-            <br>
-            <br>
-            <h3 class="one">Pizza</h3>
-            <br>
-            <p class="one">Nothing will leave you craving for more like our Kenyan style pizza. Kula kama Bazu at Bazu pizza!</p>
-            <select class="form-control size">
-              <option label="Small" value="500">Small</option>
-              <option label="Medium" value="700">Medium</option>
-              <option label="Large" value="1000">Large</option>
-            </select>
+          <div class="column">
+            <img src="images/chef .jpg" alt="Top Chefs" style="width:110%" onclick="myFunction(this);">
           </div>
-          <div class="col-md-4 col-sm-12">
-            <img class='two' src="images/pizza3.jpg" alt="Development">
-            <br>
-            <br>
-            <h3 class="two">Toppings</h3>
-            <br>
-            <p class='two'> From meat lovers to vegans, we've got you covered with our vast list of toppings. Try one out today!</p>
-            <select class="form-control toppings">
-                <option label="Pepperoni" value="50">Pepperoni</option>
-                <option label="Cheese" value="50">Cheese</option>
-                <option label="Green pepper" value="50">Green Pepper</option>
-                <option label="Jalapeno chilli" value="80">Jalapeno Chilli</option>
-                <option label="Olives" value="80">OLives</option>
-                <option label="Mushroom" value="50">Mushroom</option>
-                <option label="BBQ steak" value="100">BBQ Steak</option>
-                <option label="BBQ chicken" value="100">BBQ Chicken</option>
-
-              </select>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <img class='two' src="images/pizza 4.jpg" alt="Development">
-                <br>
-                <br>
-                <h3 class="three">Crust</h3>
-                <br>
-                <p class='three'>Have your crust like a boss. Choose from our crustylisious list right now..</p>
+          <div class="column">
+            <img src="images/pizza 6.jpg" alt="Different Flavours" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/pizza 1.jpg" alt="Vegan" style="width:100%" onclick="myFunction(this);">
+          </div>
+          <div class="column">
+            <img src="images/pizza slice.jpg" alt="On point slices" style="width:100%" onclick="myFunction(this);">
+          </div>
+        </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
     
-                <select class="form-control crust">
-                  <option label="Gluten free crust" value="150">Stuffed</option>
-                  <option label="Crispy crust" value="200">Gluten-Free</option>
-                  <option label="Stuffed crust" value="300">Crispy</option>
-                  <option label="Stuffed crust" value="400">Thick crust</option>
-
+<!-- The expanding image container -->
+  <!-- Close the image -->
+ 
+        <div class="overlay">
+        <div class="text">Bazu Pizza</div>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+          <div class="row">
+            <div class="col-sm-5">
+              <form action=""></form>
+                <label for="select">Pizza Size</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                  <option selected value="0">Select size here</option>
+                  <option value="small">Small ksh 600</option>
+                  <option value="medium">Medium ksh 800</option>
+                  <option value="large">Large ksh 1000</option>
                 </select>
-    
+                <label for="crust">Crust</label>
+                  <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                      <option selected value="0">Select crust here</option>
+                    <option value="Crispy">Thick ksh 200</option>
+                    <option value="Stuffed">Thin ksh 150</option>
+                    <option value="Gluten-free">Gluten-free  sh 180</option>
+                    </select>
+                    <label for="toppings">Toppings</label>
+                    <select class="browser-default custom-select custom-select-md mb-3" id="toppings">
+                    <label for="toppings">Select Your Toppings at ksh 80 each</label><br>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Pepperoni" value="Pepperoni" name="toppings">
+                      <label class="custom-control-label" for="Pepperoni">Pepperoni</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Extra cheese" value="Extra cheese" name="toppings">
+                      <label class="custom-control-label" for="Extra cheese">Extra cheese</label>
+                    </div>
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                      <input type="checkbox" class="custom-control-input" id="Chilli" value="Chilli" name="toppings">
+                      <label class="custom-control-label" for="Chilli">Chilli</label>
+                    </div>
+                  <br><br>
+                  <button type="submit" class="btn btn-orange proceed">Enter</button>
+              
+            </form>
+          </div>
+            <div class="choose">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="addedprice">Delivery will cost ksh. 100</p>
+                <p id="finallmessage"></p>
               </div>
+              <div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Delivery</button>
+              <div class="additional-buttons">
+                <div class="text-center">
+            </div>
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Order</button>
+                  </div>
+                </form>
             </div>
           </div>
-          <br>
-      <div class="text-center">
-        <button class="btn btn-info order" type="submit">Order</button>
       </div>
-      <br>
+    </div>
+  </div>
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Order No.</th>
-            <th scope="col">Pizza Size</th>
-            <th scope="col">Toppings</th>
-            <th scope="col">Crust</th>
-            <th scope="col">Total</th>
-          </tr>
-        </thead>
-        <tbody id="pizza">
-          <tr>
-            <th scope="row">1</th>
-            <td id="size"></td>
-            <td id="toppings"></td>
-            <td id="crust"></td>
-            <td id="total"></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="additional-buttons">
-        <div class="text-center">
-          <button class="btn btn-info add-pizza" type="submit">Add Another</button>
-          <div class="additional-info">
-            <h3>The total is: <span></span></h3>
-            <h5>Delevery for only <em>200</em>?</h5>
-            <h4>Your order has been received! We are sending your delivery to <span></span></h4>
-            <div class="location text-center">
-              <input type="text" size="30" placeholder="Where do you live?" required />
-              <button class="btn btn-info complete" type="submit">Complete</button>
-            </div>
-          </div>
-          <br>
-          <button class="btn btn-info yes" type="submit">Yes</button>
-          <button class="btn btn-info no" type="submit">No</button>
-        </div>
-        <div class="text-right">
-          <button class="btn btn-info check-out" type="submit">Checkout</button>
-        </div>
-      </div>
-      <div class="text-center">
+      <div class="text-justify">
         <address id="contact">
           <strong>Bazu Pizza</strong><br>
           Thika town, Thika Center<br>
@@ -161,6 +166,15 @@
         </div>
       </div>
     </div>
+    <!-- button tag starts from here -->
+    <button type = "button" onclick = 
+    "alert('Got some queries? Contact us via our email today.')"> 
+    Contact us 
+</button> 
+<!-- button tag ends here -->
+<script>
+  
+  </script>
     <script src="js/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
