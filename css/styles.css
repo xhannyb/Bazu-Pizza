@@ -8,6 +8,26 @@ body {
     text-align: center; 
     background-position: center center;
 }
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #aa6804;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #a5750d}
+
+.button:active {
+  background-color: #a86b1c;
+  box-shadow: 0 5px rgb(102, 74, 55);
+  transform: translateY(4px);
+}
 * {
   box-sizing: border-box;
 }

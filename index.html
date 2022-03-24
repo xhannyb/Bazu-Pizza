@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144351462-1"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-144351462-1');
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +13,19 @@
 
 </head>
 <body>
-      <!-- button tag starts from here -->
- <button type = "button" onclick = 
- "alert('Welcome to Bazu Pizza, scroll down to select your order.')"> 
- Welcome! 
-</button> 
-<!-- button tag ends here -->
-<div class="container-fluid">
-
-      <div class="page-header ">
+    
+    <div class="container-fluid">
+    <div class="page-header ">
+      <button class="button" type = "button" onclick = 
+      "alert('Welcome to Bazu Pizza, scroll down to select your order.')"> 
+        Welcome! 
+     </button> 
         <h1 class="first">Bazu Pizza</h1>
       </div>
       <div class="whatwedo">
         <h1 class="pacifico">It's not just Pizza, ni Pizza ya Mabazu!</h1>
         <p>Check out our fine cuisine.</p>
       </div>
-       <!-- The grid: four columns -->
         <div class="row">
           <div class="column">
             <img src="images/chef .jpg" alt="Top Chefs" style="width:110%" onclick="myFunction(this);">
@@ -52,19 +40,14 @@
             <img src="images/pizza slice.jpg" alt="On point slices" style="width:100%" onclick="myFunction(this);">
           </div>
         </div>
-    <div class="container">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      <img id="expandedImg" style="width:100%">
-      <div id="imgtext"></div>
-    </div>
-    
-<!-- The expanding image container -->
-  <!-- Close the image -->
- 
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
         <div class="overlay">
         <div class="text">Bazu Pizza</div>
         </div>
-      </div>
         <br>
         <br>
         <br>
@@ -172,9 +155,7 @@
     Contact us 
 </button> 
 <!-- button tag ends here -->
-<script>
-  
-  </script>
+
     <script src="js/mdb.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
